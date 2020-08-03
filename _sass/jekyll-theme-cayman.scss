@@ -32,6 +32,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: $body-text-color;
+  background-color: #f3f6fa;
 }
 
 #skip-to-content {
@@ -84,18 +85,18 @@ a {
   }
 
   @include large {
-    padding: 0.75rem 1rem;
+    padding: 0.25rem 1rem;
   }
 
   @include medium {
-    padding: 0.6rem 0.9rem;
+    padding: 0.25rem 0.9rem;
     font-size: 0.9rem;
   }
 
   @include small {
     display: block;
     width: 100%;
-    padding: 0.75rem;
+    padding: 0.25rem 0.75rem;
     font-size: 0.9rem;
 
     + .btn {
@@ -110,17 +111,22 @@ a {
   text-align: center;
   background-color: $header-bg-color;
   background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  margin: 0.5rem auto;
+  border: 1px solid #000000;
+  box-shadow: 0 0 3px #000000;
+  border-radius: 0.3rem;
 
   @include large {
-    padding: 5rem 6rem;
+    max-width: 72rem;
+    padding: 1rem 6rem;
   }
 
   @include medium {
-    padding: 3rem 4rem;
+    padding: 1rem 4rem;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
   }
 }
 
@@ -161,6 +167,11 @@ a {
 
 .main-content {
   word-wrap: break-word;
+  border: 1px solid #000000;
+  box-shadow: 0 0 3px #000000;
+  margin-bottom: 0.5rem !important;
+  border-radius: 0.3rem;
+  background-color: #ffffff;
 
   :first-child {
     margin-top: 0;
@@ -168,14 +179,14 @@ a {
 
   @include large {
     max-width: 72rem;
-    padding: 2rem 6rem;
+    padding: 2rem 3rem;
     margin: 0 auto;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   @include medium {
-    padding: 2rem 4rem;
-    font-size: 1.1rem;
+    padding: 2rem 3rem;
+    font-size: 1rem;
   }
 
   @include small {
@@ -211,6 +222,7 @@ a {
     margin-bottom: 1rem;
     font-weight: normal;
     color: $section-headings-color;
+    border-bottom: 1px solid #dce6f0;
   }
 
   p {
