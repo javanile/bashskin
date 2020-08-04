@@ -117,16 +117,20 @@ a {
   border-radius: 0.3rem;
 
   @include large {
-    max-width: 72rem;
+    max-width: 71rem;
     padding: 1rem 6rem;
   }
 
   @include medium {
     padding: 1rem 4rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   @include small {
     padding: 1rem 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }
 
@@ -178,20 +182,24 @@ a {
   }
 
   @include large {
-    max-width: 72rem;
-    padding: 2rem 3rem;
+    max-width: 71rem;
+    padding: 2.3rem 3rem;
     margin: 0 auto;
     font-size: 1rem;
   }
 
   @include medium {
-    padding: 2rem 3rem;
+    padding: 2.3rem 3rem;
     font-size: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   @include small {
     padding: 2rem 1rem;
     font-size: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   kbd {
@@ -264,6 +272,11 @@ a {
   iframe {
     border: solid 1px $border-color;
     border-radius: 0.3rem;
+  }
+
+  .comments iframe {
+    border: none;
+    border-radius: 0;
   }
 
   .highlight {
